@@ -1,6 +1,6 @@
 #! /bin/bash -f
-rm exe_par.sh
-rm ccfpar_0*
+rm -rf exe_par.sh
+rm -rf ccfpar_0*
 for line in `cat info`; do
 suff=`echo $line | awk -F_ '{print $1}'`
 NW=`echo $line | awk -F_ '{print $2}'`
